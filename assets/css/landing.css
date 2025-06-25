@@ -1,0 +1,26 @@
+body {
+  background-image: url(../images/img-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+#brand-button{
+  background-color: white;
+  border-radius: 24px;
+}
+#fill-box{
+  background-color: white;
+  border-radius: 24px;
+}
+#button-masuk{
+  max-width: 80px;
+  border-radius: 24px;
+}
+.icon{
+  height: auto;
+  width: 28px;
+}
