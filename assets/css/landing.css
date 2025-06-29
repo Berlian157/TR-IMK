@@ -1,26 +1,76 @@
-body {
-  background-image: url(../images/img-bg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: 'Poppins', sans-serif;
-  min-height: 100vh;
-  margin: 0;
-}
-#brand-button{
-  background-color: white;
-  border-radius: 24px;
-}
-#fill-box{
-  background-color: white;
-  border-radius: 24px;
-}
-#button-masuk{
-  max-width: 80px;
-  border-radius: 24px;
-}
-.icon{
-  height: auto;
-  width: 28px;
-}
+
+    body {
+      background: url('../images/img-bg.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .login-box {
+      background-color: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 2rem;
+    }
+
+    .form-control {
+      border-radius: 12px;
+    }
+
+    #button-masuk {
+      width: 60%;
+      padding: 8px;
+      margin: 14px;
+      font-size: 22px;
+      border-radius: 24px;
+      font-weight: bold;
+      background-color: #3e5f4d;
+      border: none;
+    }
+
+    #button-masuk:hover {
+      background-color: #2c483a;
+    }
+
+    #brand-button {
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 24px;
+      font-weight: 500;
+    }
+
+    #brand-button img {
+      height: 20px;
+    }
+
+    .logo-title {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .desc {
+      font-size: 1rem;
+      max-width: 500px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
