@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeNest - Menulis Jurnal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="jurnal.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span>VibeNest</span></a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html"><i class="bi bi-house-door"></i> Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="relaksasi.html"><i class="bi bi-person-praying"></i> Relaksasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-graph-up"></i> Jejak Emosi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person-circle"></i> Profil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="main-content">
+        <div class="container journal-container text-center">
+
+            <a href="#" class="btn-back">
+                <i class="bi bi-arrow-left"></i>
+            </a>
+
+            <h3 class="fw-bold mb-4">MENULIS JURNAL</h3>
+            <p class="mb-4">
+                Apakah itu kelelahan yang tak sempat kamu bicarakan, bahagia kecil yang ingin kamu simpan, atau rasa
+                yang bahkan belum punya nama? Mari mulai menuliskan, karena setiap jejak itu penting. Dan di sini, tidak
+                ada perasaan yang terlalu kecil untuk didengar.
+            </p>
+            <!-- Box Jurnal -->
+            <div class="text-editor-wrapper">
+                <textarea class="form-control text-editor" placeholder="Tuangkan perasaanmu di sini..."></textarea>
+                <div class="editor-toolbar">
+                    <i class="bi bi-type-bold"></i><i class="bi bi-type-italic"></i><i
+                        class="bi bi-type-underline"></i><i class="bi bi-palette-fill"></i><i
+                        class="bi bi-text-left"></i><i class="bi bi-text-center"></i><i class="bi bi-list-ul"></i><i
+                        class="bi bi-list-ol"></i><i class="bi bi-link-45deg"></i><i class="bi bi-emoji-smile"></i>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <button id="tombolSelesai" class="btn btn-selesai">Selesai</button>
+            </div>
+            <!-- Box Pesan -->
+            <div id="kotakPesan" class="message-box">
+                <p class="mb-0"><strong>Hai @user!</strong><br>
+                    Terima kasih sudah meluangkan waktu untuk mengisi jurnalmu hari ini. Setiap kata yang kamu tulis
+                    adalah langkah untuk lebih memahami diri sendiri. Semoga proses menulis ini memberimu kejelasan dan
+                    ketenangan. Teruslah mengeksplorasi pikiran dan perasaanmu dalam jurnal!
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-white">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-5 mb-4">
+                    <h3 class="fw-bold">VibeNest</h3>
+                    <p>Bukan sekadar galeri, tapi ruang nyaman untuk menjadi versi paling jujur dari dirimu.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h3 class="fw-bold">Tautan</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Beranda</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Relaksasi</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Jejak Emosi</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Profil</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h3 class="fw-bold">Dukungan</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Bantuan</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h3 class="fw-bold">Hubungi Kami</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt-fill me-2"></i>Jl. Inovasi No. 123, Klaten</li>
+                        <li><i class="bi bi-telephone-fill me-2"></i>(0272) 555-1234</li>
+                        <li><i class="bi bi-envelope-fill me-2"></i>kontak@vibenest.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-light">
+
+            <div class="d-flex justify-content-between flex-column flex-md-row small">
+                <div>&copy; 2025 VibeNest. Semua Hak Cipta Dilindungi.</div>
+                <div>
+                    <a href="#" class="text-white text-decoration-none me-2">Kebijakan Privasi</a> |
+                    <a href="#" class="text-white text-decoration-none ms-2">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Box Pesan -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tombolSelesai = document.getElementById('tombolSelesai');
+            const kotakPesan = document.getElementById('kotakPesan');
+            tombolSelesai.addEventListener('click', function () {
+                kotakPesan.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+
+</html>
