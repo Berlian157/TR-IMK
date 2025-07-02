@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+      background-color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+    }
+/*  */
+    .navbar {
+      background-color: #3F6647;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: white;
+    }
+
+    .navbar-brand span {
+      color: #ffffff;
+      font-size: 38px;
+    }
+
+    .nav-link {
+      color: white !important;
+    }
+
+   .sub-nav {
+      padding: 15px 0;;
+    }
+
+    .sub-nav .nav-link {
+      color: #000 !important;
+      font-weight: 500;
+    }
+
+    .sub-nav .nav-link:hover {
+      color: #3F6647 !important;
+      text-decoration: underline;
+    }
+    
+.relaksasi {
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+    .main-content {
+    padding: 20px 0;
+    min-height: 100vh;
+}
+
+/* Breadcrumb Styles */
+.breadcrumb {
+    background: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.breadcrumb-item a {
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.breadcrumb-item.active {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Typography */
+.display-4 {
+    color: #3F6647;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.lead {
+    color: #495057;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* Emotion Cards */
+.emotion-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    height: 100%;
+    display: flex;           
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+}
+
+.emotion-title {
+    color: #3F6647;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.bahagia {
+  margin-left: 20px;
+}
+
+
+/* Button Styles */
+.btn {
+    background: #3F6647;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;        
+    font-weight: 500;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    align-self: center;        
+}
+
+.btn:hover {
+    background: #1e3d1e;
+    color: #ffffff;
+}
+
+
+    footer{
+  padding-top: 40px;
+}

@@ -1,0 +1,61 @@
+    html {
+    scroll-behavior: smooth;
+    }
+    body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    }
+    .content {
+    flex: 1;
+    }
+    .navbar {
+    background-color: #3F6647;
+    }
+
+    .navbar-brand {
+    font-weight: bold;
+    color: white;
+    }
+
+    .navbar-brand span {
+    color: #ffffff;
+    font-size: 38px;
+    }
+
+    .nav-link {
+    color: white !important;
+    }
+
+    .track-controls button,
+    .track-controls a {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0%;
+    cursor: pointer;
+    transition: color 0.2s;
+    }
+
+    .track-controls button:hover,
+    .track-controls a:hover {
+    color: black;
+    }
+
+    .footer {
+    background-color: #2c4734;
+    color: white;
+    padding: 2rem 1rem;
+    }
+    .footer a {
+    color: white;
+    text-decoration: none;
+    }
+    .leaf-background {
+    background-image: url('#'); /* tambahkan gambar daun jika perlu */
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    }

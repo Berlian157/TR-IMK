@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
  html {
     scroll-behavior: smooth;
   }
 body {
-      background-color: #ffffff;
-      font-family: 'Arial', sans-serif;
-    }
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif !important;
+}
 
     .navbar {
       background-color: #3F6647;
@@ -24,14 +26,32 @@ body {
       color: white !important;
     }
 
-    .hero {
-      background: url('../images/hero-img.webp') center center/cover no-repeat;
-      height: 800px;
-      display: flex;
-      align-items: center;
-      color: white;
-      padding: 0 2rem;
+   .sub-nav {
+      padding: 15px 0;;
     }
+
+    .sub-nav .nav-link {
+      color: #000 !important;
+      font-weight: 500;
+    }
+
+    .sub-nav .nav-link:hover {
+      color: #3F6647 !important;
+      text-decoration: underline;
+    }
+.relaksasi {
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+.hero {
+  background: url('../images/hero-img.webp') center center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0 2rem;
+}
+
     .text-gradient {
     background: linear-gradient(90deg, #e8ebe7, #82C327);
     background-clip: text;

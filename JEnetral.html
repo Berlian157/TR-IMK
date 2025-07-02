@@ -1,44 +1,14 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Relaksasi - VibeNest</title>
-  <link rel="stylesheet" href="assets/css/home.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <style>
-    .card-option {
-      border-radius: 1rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-      transition: 0.3s;
-    }
-
-    .card-option:hover {
-      transform: scale(1.03);
-    }
-
-    .card-option .icon-bg {
-      width: 100px;
-      height: 100px;
-      background: radial-gradient(circle, rgba(155,245,134,0.3) 0%, transparent 60%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      margin: 0 auto 1rem;
-    }
-
-    .btn-vibenest {
-      background-color: #3F6647;
-      color: white;
-      border-radius: 24px;
-      padding: 6px 24px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/netral.css">
+    <title>Document</title>
 </head>
 <body>
-
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
   <div class="container">
@@ -64,40 +34,60 @@
     </div>
   </div>
 </nav>
-<!-- Konten Relaksasi -->
-<section class="py-5 text-center position-relative">
-  <div class="container">
-    <h3 class="fw-bold text-success mb-2">RELAKSASI</h3>
-    <p class="mb-4">
-      Dunia yang kamu pilih bukan hanya tentang lokasi visual, namun tentang suasana batin yang sedang kamu butuhkan.<br>
-      Yuk tentukan bagaimana kamu ingin merasa!
-    </p>
+<!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <!-- Navigation Header -->
+            <div class="d-flex align-items-center justify-content-between mt-4 mb-4">
+                <!-- Breadcrumb -->
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item">
+                            <a href="indeks.html" class="text-decoration-none">Beranda</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="JEemosi.html" class="text-decoration-none">Jejak Emosi</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Netral</li>
+                    </ol>
+                </nav>
+            </div>
 
-    <div class="row justify-content-center g-4">
-      <!-- Kartu 1 -->
-      <div class="col-md-4">
-        <div class="card card-option p-4 ">
-          <h5 class="fw-bold text-success mb-3 ">PANAROMA ALAM</h5>
-          <div class="icon-bg">
-            <img src="assets/images/musik 1.png" alt="Ikon Alam" width="100px" />
-          </div>
-          <a href="#" class="btn mx-auto d-block"style="border-radius: 24px; padding: 6px; width: 120px; color: #FFFFFF;background-color: #3F6647;">MULAI SESI</a>
-        </div>
-      </div>
 
-      <!-- Kartu 2 -->
-      <div class="col-md-4">
-        <div class="card card-option p-4 text-center">
-          <h5 class="fw-bold text-success mb-3">MENDENGARKAN MUSIK</h5>
-          <div class="icon-bg">
-            <img src="assets/images/musik.png" alt="Ikon Musik" width="100" />
-          </div>
-          <a href="MUSIK.HTML" class="btn mx-auto d-block" style="border-radius: 24px; padding: 6px; width: 120px; color: #FFFFFF;background-color: #3F6647;">MULAI SESI</a>
+            <!-- Title Section -->
+            <div class="text-center mb-5">
+                <h1 class="display-b">PERASAAN NETRAL</h1>
+                <p class="lead">Kadang kita butuh ruang luas untuk menumpahkan semuanya tanpa arah,</p>
+                <p class="lead">kadang cukup satu pertanyaan lembut untuk membuka pintu rasa.</p>
+                <p class="text-muted mt-3">Hari ini, biarkan jiwamu memilih jalannya:</p>
+            </div>
+
+            <!-- Activity Cards -->
+            <div class="row justify-content-center g-4 mb-5">
+                <!-- Menjawab Pertanyaan Card -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="activity-card text-center">
+                        <h3 class="activity-title">MENJAWAB<br>PERTANYAAN</h3>
+                        <div class="gambar">
+                            <img src="assets/images/WhatsApp Image 2025-07-01 at 23.24.16_7328a7df.jpg" alt="Jurnal" width="200" height="200">
+                        </div>
+                        <a href="netral.html" class="btn">MULAI</a>
+                    </div>
+                </div>
+
+                <!-- Menulis Jurnal Card -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="activity-card text-center">
+                        <h3 class="activity-title">MENULIS<br>JURNAL</h3>
+                        <div class="gambar1">
+                            <img src="assets/images/WhatsApp Image 2025-07-01 at 23.24.16_6d7bdd91.jpg" alt="jurnla" width="200" height="200">
+                        </div>
+                        <a href="Jnetral.html" class="btn">MULAI</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-</section>
 
 <!-- Footer -->
 <footer class="footer text-white mt-5" style="background-color: #4B6E41;">
@@ -145,6 +135,7 @@
   </div>
 </footer>
 
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

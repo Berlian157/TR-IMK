@@ -1,45 +1,15 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Relaksasi - VibeNest</title>
-  <link rel="stylesheet" href="assets/css/home.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <style>
-    .card-option {
-      border-radius: 1rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-      transition: 0.3s;
-    }
-
-    .card-option:hover {
-      transform: scale(1.03);
-    }
-
-    .card-option .icon-bg {
-      width: 100px;
-      height: 100px;
-      background: radial-gradient(circle, rgba(155,245,134,0.3) 0%, transparent 60%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      margin: 0 auto 1rem;
-    }
-
-    .btn-vibenest {
-      background-color: #3F6647;
-      color: white;
-      border-radius: 24px;
-      padding: 6px 24px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/emosi.css">
+    <title>Document</title>
 </head>
 <body>
-
-<!-- Navbar -->
+    <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
   <div class="container">
     <a class="navbar-brand" href="#"><span>VibeNest</span></a>
@@ -64,40 +34,57 @@
     </div>
   </div>
 </nav>
-<!-- Konten Relaksasi -->
-<section class="py-5 text-center position-relative">
-  <div class="container">
-    <h3 class="fw-bold text-success mb-2">RELAKSASI</h3>
-    <p class="mb-4">
-      Dunia yang kamu pilih bukan hanya tentang lokasi visual, namun tentang suasana batin yang sedang kamu butuhkan.<br>
-      Yuk tentukan bagaimana kamu ingin merasa!
-    </p>
 
-    <div class="row justify-content-center g-4">
-      <!-- Kartu 1 -->
-      <div class="col-md-4">
-        <div class="card card-option p-4 ">
-          <h5 class="fw-bold text-success mb-3 ">PANAROMA ALAM</h5>
-          <div class="icon-bg">
-            <img src="assets/images/musik 1.png" alt="Ikon Alam" width="100px" />
-          </div>
-          <a href="#" class="btn mx-auto d-block"style="border-radius: 24px; padding: 6px; width: 120px; color: #FFFFFF;background-color: #3F6647;">MULAI SESI</a>
-        </div>
-      </div>
+<!-- jejak emosi -->
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb" class="mt-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="home.html" class="text-decoration-none">Beranda</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Jejak Emosi</li>
+                </ol>
+            </nav>
 
-      <!-- Kartu 2 -->
-      <div class="col-md-4">
-        <div class="card card-option p-4 text-center">
-          <h5 class="fw-bold text-success mb-3">MENDENGARKAN MUSIK</h5>
-          <div class="icon-bg">
-            <img src="assets/images/musik.png" alt="Ikon Musik" width="100" />
-          </div>
-          <a href="MUSIK.HTML" class="btn mx-auto d-block" style="border-radius: 24px; padding: 6px; width: 120px; color: #FFFFFF;background-color: #3F6647;">MULAI SESI</a>
+            <!-- Title Section -->
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold mb-3">JEJAK EMOSI</h1>
+                <p class="lead mb-2">Mari beri ruang untuk apa yang kamu rasakan!</p>
+                <p class="text-muted">Pilih perasaanmu hari ini — karena semua emosi layak didengar dan diterima.</p>
+            </div>
+
+            <!-- Emotion Cards -->
+            <div class="row justify-content-center g-4 mb-5">
+                <!-- Bahagia Card -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="emotion-card text-center">
+                        <h3 class="emotion-title">BAHAGIA</h3>
+                         <img src="assets/images/image 5.png" alt="senang" width="190" height="180" class="bahagia">
+                        <button class="btn" onclick="goToBahagia()">MULAI</button>
+                    </div>
+                </div>
+
+                <!-- Sedih Card -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="emotion-card text-center">
+                        <h3 class="emotion-title">SEDIH</h3>
+                        <img src="assets/images/image 3.png" alt="senang" width="190" height="200" class="bahagia">
+                        <button class="btn" onclick="goTOsedih()">MULAI</button>
+                    </div>
+                </div>
+
+                <!-- Netral Card -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="emotion-card text-center">
+                        <h3 class="emotion-title">NETRAL</h3>
+                        <img src="assets/images/image 4.png" alt="senang" width="200" height="180" class="bahagia">
+                        <button class="btn" onclick="goTonetral()">MULAI</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-</section>
 
 <!-- Footer -->
 <footer class="footer text-white mt-5" style="background-color: #4B6E41;">
@@ -145,6 +132,20 @@
   </div>
 </footer>
 
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function goToBahagia() {
+            window.location.href = 'JEbahagia.html';
+        }
+
+        function goTOsedih() {
+          window.location.href = 'JEsedih.html';
+        }
+        function goTonetral(){
+          window.location.href = 'JEnetral.html'
+        }
+    </script>
+
 </body>
 </html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/profil.css">
+    <title>Profil</title>
+</head>
+<body>
+
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#"><span>VibeNest</span></a>
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html"><i class="bi bi-house-door"></i> Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="relaksasi.html"><img src="assets/images/Frame1.png" alt="relaksasi" width="23" height="23" class="relaksasi">Relaksasi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="JEemosi.html"><i class="bi bi-graph-up"></i> Jejak Emosi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profil.html"><i class="bi bi-person-circle"></i> Profil</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sub Navigation -->
+<div class="sub-nav">
+  <div class="container">
+    <ul class="nav nav-pills justify-content-star">
+      <li class="nav-item">
+        <a class="nav-link" href="profil.html">Biodata</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Editbiodata.html">Edit Biodata</a>
+      </li>
+      <li class="nav-item dropdown"> <a class="nav-link" href="#" id="navbarDropdownVibeKu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          VibeKu <img src="assets/images/noun-arrow-2333164.png" alt="arrow" width="10" height="10" class="image"> </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownVibeKu">
+          <li><a class="dropdown-item" href="#">Panorama alam</a></li>
+          <li><a class="dropdown-item" href="#">Musik</a></li>
+        </ul>
+      </li>
+      <div> <img src="assets/images/noun-gear-716652.png" alt="gear" width="20" height="20" class="gear"></div>
+    </ul>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="main-content">
+  <div class="container">
+    <div class="row justify-content-center align-items-start">
+      <div class="col-lg-10">
+        <div class="row align-items-start">
+          <!-- Kolom Kiri: Foto Profil -->
+          <div class="col-md-4 text-center profile-section">
+            <div class="profile-image-container">
+              <img src="assets/images/ilustrasi-meditasi.jpg" alt="meditasi" class="profile-image">
+            </div>
+            <h4 class="profile-name">Berlian Agatha</h4>
+            <p class="profile-email">berlianrzn@gmail.com</p>
+            <div class="keluar">
+              <button class="btn btn-logout" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                  <img src="assets/images/noun-logout-7604901.png" alt="arrow" width="20" height="20" class="logout"> Keluar akun
+                </button>
+            </div>
+          </div>
+
+        <!-- overlay logout -->
+        <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header d-flex justify-content-center border-0">
+                <h5 class="modal-title" id="logoutModalLabel" style="font-weight: bold;">Konfirmasi</h5>
+                </div>
+              <div class="modal-body text-center" style="font-size: 1.1rem;">
+                Apakah kamu yakin ingin keluar dari website?
+              </div>
+              <div class="modal-footer d-flex justify-content-around border-0">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal" style="width: 100px; border-radius: 20px;">Tidak</button>
+                <button type="button" class="btn btn-success" id="confirmLogout" style="width: 100px; border-radius: 20px; background-color: #3F6647; border-color: #3F6647;">Ya</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                  <!-- Kolom Kanan: Detail Profil -->
+          <div class="col-md-8 profile-details">
+            <div class="info-box">
+              <div class="info-row">
+                <div class="info-label">Nama lengkap</div>
+                <div class="info-separator">:</div>
+                <div class="info-value">Berlian Agatha</div>
+                <img src="assets/images/Frame.png" alt="icon" width="20" height="20">
+              </div>
+              <div class="info-row">
+                <div class="info-label">Nama Panggilan</div>
+                <div class="info-separator">:</div>
+                <div class="info-value">Agatha</div>
+                <img src="assets/images/Frame.png" alt="icon" width="20" height="20">
+              </div>
+              <div class="info-row">
+                <div class="info-label">Email</div>
+                <div class="info-separator">:</div>
+                <div class="info-value">agatha@gmail.com</div>
+                <img src="assets/images/Frame.png" alt="icon" width="20" height="20">
+              </div>
+              <div class="info-row">
+                <div class="info-label">Kata sandi</div>
+                <div class="info-separator">:</div>
+                <div class="info-value">*****15</div>
+                <img src="assets/images/Frame.png" alt="icon" width="20" height="20">
+              </div>
+              <div class="info-row">
+                <div class="info-label">Jenis kelamin</div>
+                <div class="info-separator">:</div>
+                <div class="info-value">Perempuan</div>
+                <img src="assets/images/Frame.png" alt="icon" width="20" height="20">
+              </div>
+              <div class="info-row">
+                <div class="info-label">Usia</div>
+                <div class="info-separator">:</div>
+                <div class="info-value">17 tahun</div>
+                <img src="assets/images/Frame.png" alt="icon" width="20" height="20">
+              </div>
+            </div>
+          </div> <!-- end col-md-8 -->
+        </div> <!-- end row -->
+      </div> <!-- end col-lg-10 -->
+    </div> <!-- end row justify-content-center -->
+  </div> <!-- end container -->
+</div> <!-- end main-content -->
+
+              
+<!-- Footer -->
+<footer class="footer text-white mt-5" style="background-color: #4B6E41;">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-5 mb-4">
+        <h3 class="fw-bold">VibeNest</h3>
+        <p>Bukan sekadar galeri, tapi ruang nyaman untuk menjadi versi paling jujur dari dirimu.</p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-md-5 mb-4">
+        <h3 class="fw-bold">Tautan cepat</h3>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-white text-decoration-none">Beranda</a></li>
+          <li><a href="relaksasi.html" class="text-white text-decoration-none">Relaksasi</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Jejak Emosi</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Profil</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 mb-4">
+        <h3 class="fw-bold">Hubungi Kami</h3>
+        <ul class="list-unstyled">
+          <li>Alamat</li>
+          <li>Jalan</li>
+          <li>Negara</li>
+          <li>Telp</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="border-light">
+
+    <div class="d-flex justify-content-between flex-column flex-md-row small">
+      <div>&copy; 2025 Camverse Corporation. All rights reserved</div>
+      <div>
+        <a href="#" class="text-white text-decoration-none me-2">Privacy Policy</a> |
+        <a href="#" class="text-white text-decoration-none ms-2">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // overlay
+  document.getElementById('confirmLogout').addEventListener('click', function() {
+    window.location.href = 'daftar.html';
+  });
+</script>
+
+</body>
+</html>
